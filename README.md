@@ -22,5 +22,6 @@
 
 基本没有啥侵入性,而且可以多个不同样式在一个界面不用写任何多余代码
 
-简书地址
-http://www.jianshu.com/users/f6a44369ac1a/latest_articles
+
+[foo]: http://www.jianshu.com/users/f6a44369ac1a/latest_articles  (简书地址)
+
