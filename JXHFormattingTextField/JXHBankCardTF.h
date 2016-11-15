@@ -10,6 +10,7 @@
 
 @interface JXHBankCardTF : UITextField
 
+  //
 - (BOOL)valueChangeValueString:(NSString *)string shouldChangeCharactersInRange:(NSRange)range;
 
 @end
