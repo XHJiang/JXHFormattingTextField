@@ -79,7 +79,15 @@ typedef NS_ENUM(NSInteger, JXHTextFieldFormat) {
 
 static const void *key = &key;
 
+@interface _JXHFormattedTextFieldHelper : NSObject
+
+@end
+
 @implementation UITextField (JXH)
+
+- (_JXHFormattedTextFieldHelper *)jxh_formatter {
+    return nil;
+}
 
 - (void)jxh_textFormat:(JXHTextFieldFormat)format {
     
