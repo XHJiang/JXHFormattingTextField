@@ -32,6 +32,8 @@
     self.modeyTF.delegate = self;
     self.numberTF.delegate = self;
     self.iPhoneTF.delegate = self;
+    
+    
 
 }
 
@@ -58,3 +60,48 @@
 
 
 @end
+
+
+
+typedef NS_ENUM(NSInteger, JXHTextFieldFormat) {
+    JXHTextFieldFormatBankCard,
+    JXHTextFieldFormatPhone
+};
+
+
+@interface UITextField (JXH)
+
+- (void)jxh_textFormat:(JXHTextFieldFormat)format;
+
+@end
+
+
+
+static const void *key = &key;
+
+@interface _JXHFormattedTextFieldHelper : NSObject
+
+@end
+
+@implementation UITextField (JXH)
+
+- (_JXHFormattedTextFieldHelper *)jxh_formatter {
+    return nil;
+}
+
+- (void)jxh_textFormat:(JXHTextFieldFormat)format {
+    
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+
